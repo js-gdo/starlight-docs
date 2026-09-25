@@ -1,0 +1,68 @@
+# 站点基础信息
+site_name: Starlight文档站
+site_description: Starlight文档站
+
+nav:
+  - 关于:
+    - StarLight不是什么: about/starlight-is-not-what.md
+    - 隐私政策: about/privacy-policy.md
+    - 免责声明: about/disclaimer.md
+    - 用户协议: about/user-agreement.md
+
+# Material主题配置
+theme:
+  name: material
+  language: zh # 中文界面
+  features:
+    - navigation.tabs        # 顶部导航标签
+    - navigation.sections    # 侧边栏分组
+    - navigation.top         # 返回顶部按钮
+    - search.suggest         # 搜索建议
+    - search.highlight       # 搜索词高亮
+    - code.copy              # 代码块复制按钮
+  palette:
+    # 浅色模式
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+    # 深色模式自动跟随系统
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+  icon:
+    logo: material/book-open-page-variant # 网站图标
+
+# 搜索插件（内置，无需额外安装）
+plugins:
+  - search:
+      lang: zh
+      separator: '[\s\-\。\，\；\：\？\！]'
+
+# Markdown扩展语法
+markdown_extensions:
+  - admonition                  # 提示块：!!! note
+  - pymdownx.details            # 可折叠提示块
+  - pymdownx.superfences        # 嵌套代码块
+  - pymdownx.highlight:         # 代码高亮
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:            # 多标签块
+      alternate_style: true
+  - tables                      # Markdown表格
+  - toc:
+      permalink: true           # 标题永久链接
+
+# 额外CSS（可选，这里留空，需要美化再加）
+extra_css: []
+
+# 额外JS（可选）
+extra_javascript: []
+
+# 自定义变量
+extra:
+  social: []
