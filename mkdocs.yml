@@ -4,6 +4,15 @@ site_description: Starlight文档站
 
 nav:
   - 首页: index.md
+  - 开始使用:
+    - 项目简介: getting-started/overview.md
+    - 本地开发: getting-started/development.md
+    - 部署到 Cloudflare: getting-started/deployment.md
+  - 功能指南:
+    - 社区功能: guides/community.md
+    - 内容与互动: guides/content-and-interaction.md
+    - 竞赛与 OJ: guides/oj.md
+    - 团队、工单与管理: guides/operations.md
   - 关于:
     - StarLight不是什么: about/starlight-is-not-what.md
     - 隐私政策: about/privacy-policy.md
