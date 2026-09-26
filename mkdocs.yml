@@ -3,6 +3,7 @@ site_name: Starlight文档站
 site_description: Starlight文档站
 
 nav:
+  - 首页: index.md
   - 关于:
     - StarLight不是什么: about/starlight-is-not-what.md
     - 隐私政策: about/privacy-policy.md
